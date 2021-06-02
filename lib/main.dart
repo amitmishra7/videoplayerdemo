@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:try_anything/screens/MyDrawer.dart';
-import 'package:try_anything/screens/Starred.dart';
-import 'package:try_anything/screens/primary.dart';
-import 'package:try_anything/screens/promotions.dart';
-import 'package:try_anything/screens/social.dart';
+import 'package:try_anything/screens/reso.dart';
+import 'package:try_anything/screens/video_stream.dart';
+
+
 
 void main() {
   runApp(MyApp());
@@ -14,13 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Title",
-      initialRoute: '/',
+      initialRoute: '/video_stream',
       routes: {
         '/': (context)=>MyDrawer(),
-        '/primary':(context)=>Primary(),
-        '/promotions':(context)=>Promotions(),
-        '/social':(context)=>Social(),
-        '/starred':(context)=>Starred(),
+        '/video_stream':(context)=>VideoStream(),
+        '/video_stream2':(context)=>MyHomePage(),
+
       },
     );
   }
